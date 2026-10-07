@@ -1,0 +1,1753 @@
+[
+ {
+  "access": "public+private",
+  "beginner_friendly": false,
+  "best_for": "Widest selection, all levels",
+  "focus": [
+   "web2",
+   "api",
+   "mobile"
+  ],
+  "name": "HackerOne",
+  "notes": "Market leader, ~38% mindshare. 2000+ orgs incl Google, Microsoft, DoD. Self-service + managed triage.",
+  "payout_range": "$500-$50k+",
+  "programs_url": "https://hackerone.com/directory/programs",
+  "region": "USA/Global",
+  "url": "https://hackerone.com"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "Steady earners, fair triage",
+  "focus": [
+   "web2",
+   "api",
+   "mobile"
+  ],
+  "name": "Bugcrowd",
+  "notes": "Closest competitor, ~32% mindshare. Dedicated managers, CrowdMatch. Less crowded than HackerOne.",
+  "payout_range": "$300-$50k+",
+  "programs_url": "https://bugcrowd.com/programs",
+  "region": "USA/Global",
+  "url": "https://bugcrowd.com"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "Beginners, EU researchers",
+  "focus": [
+   "web2",
+   "saas"
+  ],
+  "name": "Intigriti",
+  "notes": "EU standard, Belgium. 50k+ researchers. Nvidia enterprise program 2025. Clean onboarding, fast triage.",
+  "payout_range": "$300-$30k+",
+  "programs_url": "https://intigriti.com/programs",
+  "region": "Belgium/EU",
+  "url": "https://intigriti.com"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "Gov, regulated, low competition",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "name": "YesWeHack",
+  "notes": "France. 50k+ researchers. Managed triage on all programs. Dojo training. 20-40% cheaper than HackerOne.",
+  "payout_range": "$200-$20k+",
+  "programs_url": "https://yeswehack.com/programs",
+  "region": "France/EU/APAC",
+  "url": "https://yeswehack.com"
+ },
+ {
+  "access": "private-invite",
+  "beginner_friendly": false,
+  "best_for": "Vetted pros, high payouts",
+  "focus": [
+   "web2",
+   "gov",
+   "pentest"
+  ],
+  "name": "Synack",
+  "notes": "Invite-only. FedRAMP Moderate. Vetted Red Team. Flat subscription. $2k minimum payouts.",
+  "payout_range": "$2000-$100k+",
+  "programs_url": "https://synack.com",
+  "region": "USA/Global",
+  "url": "https://synack.com"
+ },
+ {
+  "access": "public",
+  "beginner_friendly": false,
+  "best_for": "Smart contract, DeFi experts",
+  "focus": [
+   "web3",
+   "smart-contract"
+  ],
+  "name": "Immunefi",
+  "notes": "Web3 leader. Single-finding payouts up to $10M+. Deepest Solidity crowd.",
+  "payout_range": "$1000-$2M+",
+  "programs_url": "https://immunefi.com/explore/",
+  "region": "Global",
+  "url": "https://immunefi.com"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": false,
+  "best_for": "Mixed crypto + web2",
+  "focus": [
+   "web2",
+   "web3"
+  ],
+  "name": "HackenProof",
+  "notes": "Estonia. Hybrid Web2+Web3. Good for dabbling in crypto without full commit.",
+  "payout_range": "$500-$50k+",
+  "programs_url": "https://hackenproof.com/programs",
+  "region": "Estonia/Global",
+  "url": "https://hackenproof.com"
+ },
+ {
+  "access": "public",
+  "beginner_friendly": true,
+  "best_for": "Portfolio building, no payout guarantee",
+  "focus": [
+   "web2",
+   "vdp"
+  ],
+  "name": "Open Bug Bounty",
+  "notes": "No guaranteed payout. Good for learning + responsible disclosure portfolio.",
+  "payout_range": "$0 (VDP)",
+  "programs_url": "https://openbugbounty.org/bugbounty-list/",
+  "region": "Global",
+  "url": "https://openbugbounty.org"
+ },
+ {
+  "access": "public-contest",
+  "beginner_friendly": false,
+  "best_for": "Audit contests, time-boxed",
+  "focus": [
+   "web3",
+   "smart-contract"
+  ],
+  "name": "Code4rena",
+  "notes": "Time-limited contests, not ongoing. Competitive audit format.",
+  "payout_range": "contest pots $50k-$500k+",
+  "programs_url": "https://code4rena.com/contests",
+  "region": "Global",
+  "url": "https://code4rena.com"
+ },
+ {
+  "access": "public-contest",
+  "beginner_friendly": false,
+  "best_for": "Audits + insurance",
+  "focus": [
+   "web3",
+   "smart-contract"
+  ],
+  "name": "Sherlock",
+  "notes": "Audit contests + coverage. Leaderboard at app.sherlock.xyz.",
+  "payout_range": "contest pots",
+  "programs_url": "https://app.sherlock.xyz/audits/contests",
+  "region": "Global",
+  "url": "https://sherlock.xyz"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": false,
+  "best_for": "Solidity competitions",
+  "focus": [
+   "web3"
+  ],
+  "name": "Cantina",
+  "notes": "USA. Competitions model. Leaderboard available.",
+  "payout_range": "contest pots",
+  "programs_url": "https://cantina.xyz/competitions",
+  "region": "USA",
+  "url": "https://cantina.xyz"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "India region, growing",
+  "focus": [
+   "web2"
+  ],
+  "name": "Bugbase",
+  "notes": "India. Private+public. Leaderboard + programs pages live.",
+  "payout_range": "varies",
+  "programs_url": "https://bugbase.ai/programs",
+  "region": "India",
+  "url": "https://bugbase.ai"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "Swiss/EU programs",
+  "focus": [
+   "web2"
+  ],
+  "name": "GObugfree",
+  "notes": "Switzerland. Small, high-quality EU scope.",
+  "payout_range": "varies",
+  "programs_url": "https://gobugfree.com/programs",
+  "region": "Switzerland",
+  "url": "https://gobugfree.com"
+ },
+ {
+  "access": "private",
+  "beginner_friendly": false,
+  "best_for": "EU private invites",
+  "focus": [
+   "web2",
+   "pentest"
+  ],
+  "name": "Yogosha",
+  "notes": "France. Private only. Vetted community.",
+  "payout_range": "varies",
+  "programs_url": "https://yogosha.com",
+  "region": "France",
+  "url": "https://yogosha.com"
+ },
+ {
+  "access": "private",
+  "beginner_friendly": false,
+  "best_for": "NL/EU private",
+  "focus": [
+   "web2"
+  ],
+  "name": "Zerocopter",
+  "notes": "Netherlands. Private crowdsourced security.",
+  "payout_range": "varies",
+  "programs_url": "https://zerocopter.com",
+  "region": "Netherlands",
+  "url": "https://zerocopter.com"
+ },
+ {
+  "access": "private",
+  "beginner_friendly": false,
+  "best_for": "Pentest-as-a-service",
+  "focus": [
+   "web2",
+   "pentest"
+  ],
+  "name": "Cobalt",
+  "notes": "USA. PtaaS, vetted pentesters, not open bounty.",
+  "payout_range": "contract",
+  "programs_url": "https://cobalt.io",
+  "region": "USA",
+  "url": "https://cobalt.io"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "US startups, low competition",
+  "focus": [
+   "web2"
+  ],
+  "name": "Federacy",
+  "notes": "USA. Smaller catalog = less competition.",
+  "payout_range": "varies",
+  "programs_url": "https://federacy.com",
+  "region": "USA",
+  "url": "https://federacy.com"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": false,
+  "best_for": "AI/ML, prompt injection",
+  "focus": [
+   "ai",
+   "llm"
+  ],
+  "name": "Huntr",
+  "notes": "UK. AI/ML bounties + hacktivity feed.",
+  "payout_range": "varies",
+  "programs_url": "https://huntr.com/bounties/hacktivity",
+  "region": "UK/Global",
+  "url": "https://huntr.com"
+ },
+ {
+  "access": "public",
+  "beginner_friendly": false,
+  "best_for": "AI red-teaming",
+  "focus": [
+   "ai",
+   "llm"
+  ],
+  "name": "0din (odin.ai)",
+  "notes": "USA. AI scope board + global leaderboard.",
+  "payout_range": "varies",
+  "programs_url": "https://0din.ai/scope",
+  "region": "USA",
+  "url": "https://0din.ai"
+ },
+ {
+  "access": "public",
+  "beginner_friendly": true,
+  "best_for": "Prompt-hacking practice",
+  "focus": [
+   "ai",
+   "llm"
+  ],
+  "name": "HackAPrompt",
+  "notes": "USA. Gamified prompt-injection challenges.",
+  "payout_range": "events",
+  "programs_url": "https://www.hackaprompt.com",
+  "region": "USA",
+  "url": "https://www.hackaprompt.com"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "Japan programs",
+  "focus": [
+   "web2"
+  ],
+  "name": "bugbounty.jp",
+  "notes": "Japan. Local programs rarely listed on US platforms.",
+  "payout_range": "varies",
+  "programs_url": "https://bugbounty.jp/en/",
+  "region": "Japan",
+  "url": "https://bugbounty.jp"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": false,
+  "best_for": "OSS bounties",
+  "focus": [
+   "web2",
+   "oss"
+  ],
+  "name": "IssueHunt",
+  "notes": "Japan. Bounties on GitHub issues.",
+  "payout_range": "varies",
+  "programs_url": "https://issuehunt.io/programs",
+  "region": "Japan/Global",
+  "url": "https://issuehunt.io"
+ },
+ {
+  "access": "public",
+  "beginner_friendly": true,
+  "best_for": "WordPress researchers",
+  "focus": [
+   "web2",
+   "wordpress"
+  ],
+  "name": "Patchstack",
+  "notes": "Estonia. WordPress ecosystem VDP + leaderboard.",
+  "payout_range": "varies",
+  "programs_url": "https://patchstack.com/database/vdp",
+  "region": "Estonia/Global",
+  "url": "https://patchstack.com"
+ },
+ {
+  "access": "public",
+  "beginner_friendly": true,
+  "best_for": "WordPress specialists",
+  "focus": [
+   "web2",
+   "wordpress"
+  ],
+  "name": "Wordfence",
+  "notes": "USA. Threat-intel linked bounty.",
+  "payout_range": "varies",
+  "programs_url": "https://www.wordfence.com/threat-intel/bug-bounty-program/",
+  "region": "USA",
+  "url": "https://wordfence.com"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "Turkey/US programs",
+  "focus": [
+   "web2"
+  ],
+  "name": "BugBounter",
+  "notes": "US/Estonia/Turkey. Growing catalog.",
+  "payout_range": "varies",
+  "programs_url": "https://bugbounter.com",
+  "region": "US/EU/TR",
+  "url": "https://bugbounter.com"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "Web3 contests",
+  "focus": [
+   "web3"
+  ],
+  "name": "CodeHawks (Cyfrin)",
+  "notes": "USA. Competitive audits, strong learning community. Good web3 start.",
+  "payout_range": "contest pots",
+  "programs_url": "https://codehawks.cyfrin.io/contests",
+  "region": "USA/Global",
+  "url": "https://codehawks.cyfrin.io"
+ },
+ {
+  "access": "public",
+  "beginner_friendly": false,
+  "best_for": "Decentralized bounties",
+  "focus": [
+   "web3"
+  ],
+  "name": "Hats.finance",
+  "notes": "Decentralized vaults, on-chain payouts.",
+  "payout_range": "vault-based",
+  "programs_url": "https://hats.finance",
+  "region": "Global",
+  "url": "https://hats.finance"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": false,
+  "best_for": "EU mid-market",
+  "focus": [
+   "web2"
+  ],
+  "name": "Hackrate",
+  "notes": "Hungary. Catalog at hckrt.com/Catalog.",
+  "payout_range": "varies",
+  "programs_url": "https://hckrt.com/Catalog",
+  "region": "Hungary/EU",
+  "url": "https://hckrt.com"
+ },
+ {
+  "access": "public+private",
+  "beginner_friendly": true,
+  "best_for": "DACH/EU beginners",
+  "focus": [
+   "web2"
+  ],
+  "name": "Bug Bounty Switzerland",
+  "notes": "Switzerland. Curated programs page.",
+  "payout_range": "varies",
+  "programs_url": "https://www.bugbounty.ch/en/programs/",
+  "region": "Switzerland",
+  "url": "https://bugbounty.ch"
+ },
+ {
+  "name": "Australian Government VDP",
+  "url": "https://www.homeaffairs.gov.au",
+  "programs_url": "https://www.homeaffairs.gov.au",
+  "region": "Australia",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "Gov portfolio building",
+  "notes": "Official AU VDP. No payout, safe-harbor disclosure for portfolio."
+ },
+ {
+  "name": "bugbounty.sa",
+  "url": "https://bugbounty.sa",
+  "programs_url": "https://bugbounty.sa",
+  "region": "Saudi Arabia",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "private",
+  "payout_range": "invite",
+  "beginner_friendly": false,
+  "best_for": "Saudi private invites",
+  "notes": "SA national platform. Private programs + leaderboard."
+ },
+ {
+  "name": "CCB Belgium CVD",
+  "url": "https://ccb.belgium.be/cert/vulnerability-reporting-ccb",
+  "programs_url": "https://ccb.belgium.be/cert/vulnerability-reporting-ccb",
+  "region": "Belgium",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "EU gov disclosure",
+  "notes": "Belgian cyber centre CVD. Coordinated disclosure, no bounty."
+ },
+ {
+  "name": "CERT Polska CVD",
+  "url": "https://cert.pl/en/cvd/",
+  "programs_url": "https://cert.pl/en/cve/",
+  "region": "Poland",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "PL coordinated disclosure",
+  "notes": "CERT.PL CVD with public CVE log. Good first-disclosure credit."
+ },
+ {
+  "name": "CERT-In RVDCP",
+  "url": "https://www.cert-in.org.in/RVDCP.jsp",
+  "programs_url": "https://www.cert-in.org.in/Hallof_Fame.jsp",
+  "region": "India",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "IN hall-of-fame credit",
+  "notes": "India CERT disclosure with public hall of fame."
+ },
+ {
+  "name": "CISA VDP Platform",
+  "url": "https://www.cisa.gov/resources-tools/services/vulnerability-disclosure-policy-vdp-platform",
+  "programs_url": "https://www.cisa.gov/resources-tools/services/vulnerability-disclosure-policy-vdp-platform",
+  "region": "USA",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "US federal VDP",
+  "notes": "CISA VDP for federal systems. Strict rules of engagement."
+ },
+ {
+  "name": "DIVD",
+  "url": "https://www.divd.nl",
+  "programs_url": "https://www.divd.nl",
+  "region": "Netherlands",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "NL volunteer research",
+  "notes": "Dutch volunteer institute. Coordinated disclosure, research-driven."
+ },
+ {
+  "name": "HITCON ZeroDay",
+  "url": "https://zeroday.hitcon.org",
+  "programs_url": "https://zeroday.hitcon.org/bug-bounty/list",
+  "region": "Taiwan",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "TW bug-bounty list",
+  "notes": "Taiwan HITCON portal with public bounty list. Low competition for TW targets."
+ },
+ {
+  "name": "JVN Japan",
+  "url": "https://jvn.jp/en/",
+  "programs_url": "https://jvn.jp/en/nav/",
+  "region": "Japan",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "JP vendor disclosure",
+  "notes": "Japan Vulnerability Notes. Vendor-coordinated, portfolio credit."
+ },
+ {
+  "name": "KISA KNVD",
+  "url": "https://knvd.krcert.or.kr",
+  "programs_url": "https://knvd.krcert.or.kr",
+  "region": "South Korea",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "KR national disclosure",
+  "notes": "Korea national VDP (KISA/KrCERT)."
+ },
+ {
+  "name": "NCIIPC RVDP",
+  "url": "https://nciipc.gov.in/RVDP.html",
+  "programs_url": "https://nciipc.gov.in/RVDP.html",
+  "region": "India",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "IN critical-infra VDP",
+  "notes": "India critical-information-infrastructure disclosure."
+ },
+ {
+  "name": "NCSA Maldives",
+  "url": "https://hub.ncsa.gov.mv/resources/bug-bounty-program",
+  "programs_url": "https://hub.ncsa.gov.mv/resources/bug-bounty-program",
+  "region": "Maldives",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "MV hall-of-fame",
+  "notes": "Maldives national program with public hall of fame. Thin competition."
+ },
+ {
+  "name": "NCSC-FI CVD",
+  "url": "https://www.kyberturvallisuuskeskus.fi/en/report",
+  "programs_url": "https://www.kyberturvallisuuskeskus.fi/en/report",
+  "region": "Finland",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "FI coordinated disclosure",
+  "notes": "Finnish NCSC CVD channel."
+ },
+ {
+  "name": "NCSC-NL CVD",
+  "url": "https://www.ncsc.nl/contact/kwetsbaarheid-melden",
+  "programs_url": "https://www.ncsc.nl/contact/kwetsbaarheid-melden",
+  "region": "Netherlands",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "NL gov disclosure",
+  "notes": "Dutch NCSC coordinated vulnerability disclosure."
+ },
+ {
+  "name": "NKSC Lithuania CVD",
+  "url": "https://www.nksc.lt/pranesti-spraga.html",
+  "programs_url": "https://www.nksc.lt/pranesti-spraga.html",
+  "region": "Lithuania",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "LT disclosure",
+  "notes": "Lithuanian NKSC reporting channel."
+ },
+ {
+  "name": "Qatar Bug Bounty",
+  "url": "https://bugbounty.qa",
+  "programs_url": "https://bugbounty.qa",
+  "region": "Qatar",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "QA national programs",
+  "notes": "Qatar national platform, mixed private/public."
+ },
+ {
+  "name": "Singapore GovTech VDP",
+  "url": "https://www.tech.gov.sg/report-vulnerability/",
+  "programs_url": "https://www.tech.gov.sg/report-vulnerability/",
+  "region": "Singapore",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "SG gov disclosure",
+  "notes": "Singapore GovTech VDP. Clean process, portfolio credit."
+ },
+ {
+  "name": "Swiss NCSC Bug Bounty",
+  "url": "https://www.ncsc.admin.ch",
+  "programs_url": "https://www.ncsc.admin.ch",
+  "region": "Switzerland",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "CH public programs",
+  "notes": "Swiss national cyber centre bounty/VDP."
+ },
+ {
+  "name": "TVN Taiwan",
+  "url": "https://www.twcert.org.tw/en/np-138-2.html",
+  "programs_url": "https://www.twcert.org.tw/en/lp-139-2.html",
+  "region": "Taiwan",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "TW disclosure notes",
+  "notes": "Taiwan Vulnerability Note (TWCERT)."
+ },
+ {
+  "name": "UAE National Bug Bounty",
+  "url": "https://bugbounty.ae",
+  "programs_url": "https://bugbounty.ae",
+  "region": "UAE",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "private",
+  "payout_range": "invite",
+  "beginner_friendly": false,
+  "best_for": "UAE private invites",
+  "notes": "UAE national platform, private programs."
+ },
+ {
+  "name": "UK NCSC VDP",
+  "url": "https://www.ncsc.gov.uk",
+  "programs_url": "https://www.ncsc.gov.uk",
+  "region": "UK",
+  "focus": [
+   "web2",
+   "gov"
+  ],
+  "access": "public",
+  "payout_range": "$0 (VDP)",
+  "beginner_friendly": true,
+  "best_for": "UK gov disclosure",
+  "notes": "UK NCSC vulnerability disclosure, no bounty."
+ },
+ {
+  "name": "AuditOne",
+  "url": "https://auditone.io",
+  "programs_url": "https://www.auditone.io/bug-bounty",
+  "region": "Europe",
+  "focus": [
+   "web3"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "EU audit bounties",
+  "notes": "Europe audit marketplace with bounty activity board."
+ },
+ {
+  "name": "BugRap",
+  "url": "https://bugrap.io",
+  "programs_url": "https://bugrap.io/bounties",
+  "region": "Global",
+  "focus": [
+   "web3"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "New fits",
+  "notes": "Low-competition bounty board with white-hat leaderboard."
+ },
+ {
+  "name": "CertiK Bounty",
+  "url": "https://certik.com",
+  "programs_url": "https://www.certik.com/products/bug-bounty",
+  "region": "USA",
+  "focus": [
+   "web3"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "Audited-protocol bounties",
+  "notes": "CertiK audit-linked bounties on vetted protocols."
+ },
+ {
+  "name": "Certora Contests",
+  "url": "https://www.certora.com/contests",
+  "programs_url": "https://www.certora.com/contests",
+  "region": "Global",
+  "focus": [
+   "web3"
+  ],
+  "access": "public",
+  "payout_range": "contest pots",
+  "beginner_friendly": false,
+  "best_for": "Formal-verification contests",
+  "notes": "Formal-methods contests. Advanced, high signal for FV skills."
+ },
+ {
+  "name": "Hashlock",
+  "url": "https://hashlock.com",
+  "programs_url": "https://hashlock.com/bug-bounty",
+  "region": "Australia",
+  "focus": [
+   "web3"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "AU audit bounties",
+  "notes": "Australian auditor with listed bug bounties."
+ },
+ {
+  "name": "OpenBounty Shentu",
+  "url": "https://openbounty.shentu.org",
+  "programs_url": "https://openbounty.shentu.org/allBounties",
+  "region": "Global",
+  "focus": [
+   "web3"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "Chain-ecosystem bounties",
+  "notes": "Shentu chain bounty board with leaderboard. Thin crowd."
+ },
+ {
+  "name": "Remedy",
+  "url": "https://r.xyz",
+  "programs_url": "https://hunt.r.xyz",
+  "region": "Global",
+  "focus": [
+   "web3"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "Curated hunts",
+  "notes": "Invite + open hunts via hunt.r.xyz."
+ },
+ {
+  "name": "Secure3",
+  "url": "https://secure3.io",
+  "programs_url": "https://secure3.io",
+  "region": "USA",
+  "focus": [
+   "web3"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "US audit bounties",
+  "notes": "US auditor bounty programs."
+ },
+ {
+  "name": "SlowMist",
+  "url": "https://slowmist.com",
+  "programs_url": "https://slowmist.io/bug-bounty.html",
+  "region": "China",
+  "focus": [
+   "web3"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "CN security bounties",
+  "notes": "Established CN security team bounty page."
+ },
+ {
+  "name": "Gray Swan Arena",
+  "url": "https://app.grayswan.ai/arena",
+  "programs_url": "https://app.grayswan.ai/arena",
+  "region": "USA",
+  "focus": [
+   "ai",
+   "llm"
+  ],
+  "access": "public",
+  "payout_range": "events",
+  "beginner_friendly": true,
+  "best_for": "AI red-team practice",
+  "notes": "Gamified AI-safety arena with global leaderboard."
+ },
+ {
+  "name": "SSD Secure Disclosure",
+  "url": "https://ssd-disclosure.com",
+  "programs_url": "https://ssd-disclosure.com",
+  "region": "Israel",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "0day acquisition",
+  "notes": "Buys high-end vulns. Advanced researchers only, NDA-style process."
+ },
+ {
+  "name": "Zero Day Initiative",
+  "url": "https://zerodayinitiative.com",
+  "programs_url": "https://zerodayinitiative.com",
+  "region": "USA",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "0day payouts + credit",
+  "notes": "Trend Micro ZDI. Pays for 0days, public advisories = strong credit."
+ },
+ {
+  "name": "360 SRC",
+  "url": "https://src.360.net",
+  "programs_url": "https://src.360.net",
+  "region": "China",
+  "focus": [
+   "web2"
+  ],
+  "access": "public+private",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "CN corporate SRC",
+  "notes": "Qihoo 360 SRC. Chinese-language, high volume."
+ },
+ {
+  "name": "BBHunt Japan",
+  "url": "https://bbhunt.jp",
+  "programs_url": "https://bbhunt.jp",
+  "region": "Japan",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "JP local programs",
+  "notes": "Japan-local platform. Rarely crowded by global hunters."
+ },
+ {
+  "name": "BI.ZONE Bug Bounty",
+  "url": "https://bugbounty.bi.zone",
+  "programs_url": "https://bugbounty.bi.zone/companies",
+  "region": "Russia",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "RU enterprise scope",
+  "notes": "BI.ZONE with top-hackers board. Russian-language programs."
+ },
+ {
+  "name": "BountyTeam",
+  "url": "https://www.bountyteam.com",
+  "programs_url": "https://www.bountyteam.com/bug-bounty-list",
+  "region": "China",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "CN bounty list",
+  "notes": "Chinese bounty aggregator + leaderboard."
+ },
+ {
+  "name": "Bug Hunt Brazil",
+  "url": "https://bughunt.com.br",
+  "programs_url": "https://bughunt.com.br",
+  "region": "Brazil",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "BR local programs",
+  "notes": "Brazilian platform. Portuguese scopes, thin global competition."
+ },
+ {
+  "name": "Bug Zero",
+  "url": "https://bugzero.io",
+  "programs_url": "https://bugzero.io/programs",
+  "region": "Sri Lanka",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "LK/SA regional",
+  "notes": "Sri Lanka platform with programs + leaderboard. Low crowd."
+ },
+ {
+  "name": "BugBank",
+  "url": "https://www.bugbank.cn",
+  "programs_url": "https://www.bugbank.cn/task/",
+  "region": "China",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "CN task board",
+  "notes": "Chinese task-style bounty board with ranks."
+ },
+ {
+  "name": "Bugbop",
+  "url": "https://bugbop.com",
+  "programs_url": "https://bugbop.com/public-programs",
+  "region": "Australia",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "AU small programs",
+  "notes": "Australian platform, public programs list. Beginner-accessible."
+ },
+ {
+  "name": "BugBounty.am",
+  "url": "https://bugbounty.am",
+  "programs_url": "https://bugbounty.am",
+  "region": "Armenia",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "AM micro-programs",
+  "notes": "Tiny Armenia platform. Near-zero competition."
+ },
+ {
+  "name": "BugBounty.ru",
+  "url": "https://bugbounty.ru",
+  "programs_url": "https://bugbounty.ru/app/programs",
+  "region": "Russia",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "RU program catalog",
+  "notes": "Russian catalog with in-app programs list."
+ },
+ {
+  "name": "Buglab",
+  "url": "https://buglab.io",
+  "programs_url": "https://buglab.io",
+  "region": "Singapore",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "SG contests",
+  "notes": "Singapore contest-style platform."
+ },
+ {
+  "name": "Bugloud",
+  "url": "https://bugloud.com",
+  "programs_url": "https://bugloud.com/programs",
+  "region": "UAE",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "MENA programs",
+  "notes": "UAE platform with programs + leaderboard."
+ },
+ {
+  "name": "BugRakshak",
+  "url": "https://www.bugrakshak.com",
+  "programs_url": "https://www.bugrakshak.com",
+  "region": "India",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "IN small programs",
+  "notes": "Indian platform with leaderboard. Accessible entry."
+ },
+ {
+  "name": "bugsbounty.io",
+  "url": "https://bugsbounty.com",
+  "programs_url": "https://bugsbounty.com",
+  "region": "England",
+  "focus": [
+   "web2"
+  ],
+  "access": "private",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "UK private",
+  "notes": "UK private-only programs."
+ },
+ {
+  "name": "BugStream",
+  "url": "https://bugstream.com.ua",
+  "programs_url": "https://bugstream.com.ua/programs",
+  "region": "Ukraine",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "UA programs",
+  "notes": "Ukrainian platform with leaderboard + programs."
+ },
+ {
+  "name": "Bugv",
+  "url": "https://bugv.io",
+  "programs_url": "https://bugv.io",
+  "region": "Nepal",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "NP open programs",
+  "notes": "Nepal open platform. Very thin competition."
+ },
+ {
+  "name": "Butian",
+  "url": "https://butian.net",
+  "programs_url": "https://www.butian.net/Reward/plan/2",
+  "region": "China",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "CN white-hat ranks",
+  "notes": "Major Chinese platform with white-hat rankings."
+ },
+ {
+  "name": "Capture The Bug",
+  "url": "https://capturethebug.xyz",
+  "programs_url": "https://capturethebug.xyz",
+  "region": "New Zealand",
+  "focus": [
+   "web2"
+  ],
+  "access": "private",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "NZ private",
+  "notes": "New Zealand private programs."
+ },
+ {
+  "name": "Com Olho",
+  "url": "https://comolho.com",
+  "programs_url": "https://cyber.comolho.com/programs/bug-bounty/",
+  "region": "India",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "IN community programs",
+  "notes": "Indian community platform with researcher board."
+ },
+ {
+  "name": "Compass Security",
+  "url": "https://compass-security.com",
+  "programs_url": "https://bugbounty.compass-security.com/",
+  "region": "Switzerland",
+  "focus": [
+   "web2",
+   "pentest"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "CH pentest bounties",
+  "notes": "Swiss pentest firm bounty portal."
+ },
+ {
+  "name": "Crowdswarm",
+  "url": "https://crowdswarm.io",
+  "programs_url": "https://crowdswarm.io",
+  "region": "UAE",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "MENA crowd",
+  "notes": "UAE crowdsourced security."
+ },
+ {
+  "name": "Cyber Army Indonesia",
+  "url": "https://www.cyberarmy.asia",
+  "programs_url": "https://www.cyberarmy.asia",
+  "region": "Indonesia",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "ID community",
+  "notes": "Indonesian hacker community programs."
+ },
+ {
+  "name": "Cyber3ra",
+  "url": "https://cyber3ra.com",
+  "programs_url": "https://cyber3ra.com",
+  "region": "India",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "IN new fits",
+  "notes": "Small Indian platform, low competition."
+ },
+ {
+  "name": "Cyberbay",
+  "url": "https://cyberbay.tech",
+  "programs_url": "https://cyberbay.tech",
+  "region": "Hong Kong",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "HK programs",
+  "notes": "Hong Kong platform. Gateway to APAC scopes."
+ },
+ {
+  "name": "CyberTalents",
+  "url": "https://cybertalents.com",
+  "programs_url": "https://cybertalents.com/competitions",
+  "region": "Middle East",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "MENA competitions",
+  "notes": "Competition-first platform + world rank. Good practice ground."
+ },
+ {
+  "name": "Cyscope",
+  "url": "https://cyscope.io",
+  "programs_url": "https://cyscope.io",
+  "region": "Switzerland & Latam",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "CH/Latam scopes",
+  "notes": "Swiss-Latam crowdsourced security."
+ },
+ {
+  "name": "Detectify Crowdsource",
+  "url": "https://detectify.com",
+  "programs_url": "https://detectify.com",
+  "region": "Sweden",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "ASM contributors",
+  "notes": "Crowdsourced ASM checks for Detectify. Researcher-contributor model."
+ },
+ {
+  "name": "Dvuln",
+  "url": "https://dvuln.com",
+  "programs_url": "https://dvuln.com",
+  "region": "Australia",
+  "focus": [
+   "web2"
+  ],
+  "access": "private",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "AU private",
+  "notes": "Australian private programs."
+ },
+ {
+  "name": "Find The Gap",
+  "url": "https://findthegap.co.kr/en",
+  "programs_url": "https://findthegap.co.kr/en",
+  "region": "South Korea",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "KR programs",
+  "notes": "Korean platform (EN available)."
+ },
+ {
+  "name": "Findbug",
+  "url": "https://findbug.io",
+  "programs_url": "https://findbug.io",
+  "region": "Kosovo",
+  "focus": [
+   "web2"
+  ],
+  "access": "private",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "XK private",
+  "notes": "Kosovo private programs."
+ },
+ {
+  "name": "Genbounty",
+  "url": "https://genbounty.com/",
+  "programs_url": "https://genbounty.com/",
+  "region": "UK",
+  "focus": [
+   "web2"
+  ],
+  "access": "private",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "UK team bounties",
+  "notes": "UK team-based private bounties."
+ },
+ {
+  "name": "Gerobug",
+  "url": "https://gerobug.gerosecurity.com",
+  "programs_url": "https://gerobug.gerosecurity.com/programs/",
+  "region": "Indonesia",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "ID public list",
+  "notes": "Indonesian self-hosted public programs list."
+ },
+ {
+  "name": "Hackr.fi",
+  "url": "https://www.hackr.fi",
+  "programs_url": "https://www.hackr.fi/en/programs.html",
+  "region": "Finland",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "FI/EU programs",
+  "notes": "Finnish platform with EN programs page. Quiet crowd."
+ },
+ {
+  "name": "HACKTIFY",
+  "url": "https://hacktify.eu",
+  "programs_url": "https://hacktify.eu/en/public-programs/",
+  "region": "Central and Eastern Europe",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "CEE public list",
+  "notes": "Central/Eastern-EU platform with leaderboard + public list."
+ },
+ {
+  "name": "HuntBug",
+  "url": "https://huntbug.com",
+  "programs_url": "https://huntbug.com",
+  "region": "USA",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "US new fits",
+  "notes": "Small US platform with leaderboard. Low crowd."
+ },
+ {
+  "name": "HuntersPay",
+  "url": "https://www.hunterspay.com.br",
+  "programs_url": "https://www.hunterspay.com.br",
+  "region": "Brazil",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "BR programs",
+  "notes": "Brazilian platform, Portuguese scopes."
+ },
+ {
+  "name": "Huoxian",
+  "url": "https://www.huoxian.cn",
+  "programs_url": "https://www.huoxian.cn/project",
+  "region": "China",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "CN projects",
+  "notes": "Chinese project-style board with community ranks."
+ },
+ {
+  "name": "Inspectiv",
+  "url": "https://inspectiv.com",
+  "programs_url": "https://inspectiv.com",
+  "region": "USA",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "US vetted scopes",
+  "notes": "US platform, mixed public/private."
+ },
+ {
+  "name": "Kolahsefid",
+  "url": "https://www.kolahsefid.org",
+  "programs_url": "https://www.kolahsefid.org",
+  "region": "Iran",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "IR programs",
+  "notes": "Iranian white-hat platform (Persian)."
+ },
+ {
+  "name": "Nordic Defender",
+  "url": "https://nordicdefender.com",
+  "programs_url": "https://nordicdefender.com",
+  "region": "Sweden",
+  "focus": [
+   "web2"
+  ],
+  "access": "private",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "Nordic private",
+  "notes": "Swedish private programs."
+ },
+ {
+  "name": "PatchDay",
+  "url": "https://patchday.io",
+  "programs_url": "https://patchday.io",
+  "region": "South Korea",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "KR programs",
+  "notes": "Korean platform with leaderboard."
+ },
+ {
+  "name": "Ravro",
+  "url": "https://ravro.ir",
+  "programs_url": "https://ravro.ir/companies",
+  "region": "Iran",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "IR company list",
+  "notes": "Iranian platform with companies + reports board."
+ },
+ {
+  "name": "RedStorm",
+  "url": "https://redstorm.io",
+  "programs_url": "https://redstorm.io/program",
+  "region": "Indonesia",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "ID programs",
+  "notes": "Indonesian platform with program list. Accessible."
+ },
+ {
+  "name": "safehats",
+  "url": "https://safehats.com",
+  "programs_url": "https://safehats.com",
+  "region": "India",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "IN programs",
+  "notes": "Indian platform, mixed access."
+ },
+ {
+  "name": "Safevuln",
+  "url": "https://safevuln.com",
+  "programs_url": "https://safevuln.com/programs",
+  "region": "Vietnam",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "VN public list",
+  "notes": "Vietnamese public programs + leaderboard. Thin crowd."
+ },
+ {
+  "name": "Secuna",
+  "url": "https://secuna.io",
+  "programs_url": "https://platform.secuna.io/programs",
+  "region": "Philippines",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "PH programs",
+  "notes": "Philippines platform. Good APAC entry point."
+ },
+ {
+  "name": "Secur0",
+  "url": "https://secur0.com",
+  "programs_url": "https://app.secur0.com/programs",
+  "region": "Europe & Latam",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "EU/Latam scopes",
+  "notes": "EU-Latam platform with leaderboards + app programs."
+ },
+ {
+  "name": "Standoff 365",
+  "url": "https://bugbounty.standoff365.com",
+  "programs_url": "https://bugbounty.standoff365.com/en-US/",
+  "region": "Russia",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "RU ratings + bounties",
+  "notes": "Positive Tech platform with public ratings."
+ },
+ {
+  "name": "Swarmnetics",
+  "url": "https://swarmnetics.com",
+  "programs_url": "https://swarmnetics.com",
+  "region": "Singapore",
+  "focus": [
+   "web2"
+  ],
+  "access": "private",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "SG private",
+  "notes": "Singapore private programs."
+ },
+ {
+  "name": "Teklabspace",
+  "url": "https://teklabspace.com",
+  "programs_url": "https://teklabspace.com",
+  "region": "Nigeria",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "NG open programs",
+  "notes": "Nigerian open programs. Near-zero competition."
+ },
+ {
+  "name": "Testbirds",
+  "url": "https://testbirds.com",
+  "programs_url": "https://testbirds.com",
+  "region": "Germany",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "DE crowdtesting",
+  "notes": "German QA + bounty crowdtesting. Easy first payouts."
+ },
+ {
+  "name": "Topcoder",
+  "url": "https://topcoder.com",
+  "programs_url": "https://topcoder.com/challenges",
+  "region": "USA",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "Dev + security gigs",
+  "notes": "Challenge-based gigs incl security. Good practice income."
+ },
+ {
+  "name": "TrustLine",
+  "url": "https://www.trustline.sa",
+  "programs_url": "https://www.trustline.sa",
+  "region": "Saudi Arabia",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "SA programs",
+  "notes": "Saudi platform, mixed access."
+ },
+ {
+  "name": "TumarOne",
+  "url": "https://tumar.one",
+  "programs_url": "https://tumar.one/#for-bug-hunters",
+  "region": "Kazakhstan",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "KZ programs",
+  "notes": "Kazakhstan platform with leaderboard. Untapped scopes."
+ },
+ {
+  "name": "UzHunter",
+  "url": "https://uzhunter.com",
+  "programs_url": "https://uzhunter.com",
+  "region": "Uzbekistan",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "UZ programs",
+  "notes": "Uzbekistan hunter platform. Tiny crowd."
+ },
+ {
+  "name": "Vulbox",
+  "url": "https://vulbox.com",
+  "programs_url": "https://vulbox.com/projects/list",
+  "region": "China",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "CN projects + seasons",
+  "notes": "Chinese projects list with seasonal tops."
+ },
+ {
+  "name": "Vulnerability Lab",
+  "url": "https://vulnerability-lab.com",
+  "programs_url": "https://www.vulnerability-lab.com/list-of-bug-bounty-programs.php",
+  "region": "Germany",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "DE bounty list + labs",
+  "notes": "Long-running DE lab with public bounty list + hacktivity."
+ },
+ {
+  "name": "Vulnscope",
+  "url": "https://vulnscope.com",
+  "programs_url": "https://vulnscope.com/programas",
+  "region": "Chile",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "CL/Latam programs",
+  "notes": "Chilean platform with hacker ranking. Spanish scopes."
+ },
+ {
+  "name": "WhiteHub",
+  "url": "https://whitehub.net",
+  "programs_url": "https://whitehub.net/programs",
+  "region": "Vietnam",
+  "focus": [
+   "web2"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "VN programs",
+  "notes": "Vietnam (CyStack) programs + leaderboard. Accessible."
+ },
+ {
+  "name": "ZeroDay Test",
+  "url": "https://zerodaytest.com",
+  "programs_url": "https://zerodaytest.com",
+  "region": "Bangladesh",
+  "focus": [
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "BD programs",
+  "notes": "Bangladesh platform. Very thin competition."
+ }
+]

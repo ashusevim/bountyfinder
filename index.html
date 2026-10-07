@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bountyfinder — every bug bounty platform, one search</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23d8f34e'/%3E%3Ctext x='16' y='23' font-size='19' text-anchor='middle' font-family='sans-serif' font-weight='bold' fill='%23141604'%3Eb%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+--bg:#060607;--ink:#f5f3ec;--mut:#a09a8c;--line:rgba(245,243,236,.10);
+--shell:rgba(245,243,236,.05);--core:#0c0d0f;
+--acc:#d8f34e;--acc-ink:#141604;--vio:#b7a6ff;--ember:#ff9d6b;
+--ease:cubic-bezier(.32,.72,0,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+background:radial-gradient(720px 460px at 8% -6%,rgba(216,243,78,.10),transparent 60%),
+radial-gradient(820px 560px at 94% 4%,rgba(183,166,255,.14),transparent 62%),
+radial-gradient(900px 700px at 50% 115%,rgba(255,157,107,.08),transparent 60%);}
+body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.05;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");}
+.wrap{max-width:1240px;margin:0 auto;padding:0 22px 100px;position:relative;z-index:1}
+/* island nav */
+.nav{position:sticky;top:14px;z-index:20;display:flex;justify-content:center}
+.navin{display:flex;align-items:center;gap:16px;background:rgba(12,13,15,.72);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+border:1px solid var(--line);border-radius:999px;padding:8px 8px 8px 20px;margin-top:10px;max-width:100%}
+.logo{font-family:"Space Grotesk";font-weight:700;font-size:15px;letter-spacing:-.01em;white-space:nowrap}
+.logo em{color:var(--acc);font-style:normal}
+.navmeta{font-size:12px;color:var(--mut);border-left:1px solid var(--line);padding-left:16px;white-space:nowrap}
+.dotlive{display:inline-block;width:7px;height:7px;border-radius:99px;background:var(--acc);margin-right:7px;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.cta{display:flex;align-items:center;gap:10px;background:var(--acc);color:var(--acc-ink);font-weight:800;font-size:13px;
+border-radius:999px;padding:9px 9px 9px 18px;text-decoration:none;border:0;cursor:pointer;transition:transform .6s var(--ease);white-space:nowrap}
+.cta:active{transform:scale(.97)}
+.ic{width:30px;height:30px;border-radius:999px;background:rgba(0,0,0,.14);display:flex;align-items:center;justify-content:center;transition:transform .6s var(--ease)}
+.cta:hover .ic{transform:translate(2px,-2px) scale(1.08)}
+/* ticker */
+.ticker{margin:22px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;
+mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.tick{display:inline-block;padding:10px 0;animation:slide 36s linear infinite;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.tick b{color:var(--acc);margin:0 8px}
+@keyframes slide{to{transform:translateX(-50%)}}
+/* editorial split hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:44px;padding:70px 0 30px;align-items:start}
+.stickycol{position:sticky;top:96px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:rgba(245,243,236,.04);
+border-radius:999px;padding:7px 14px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);font-weight:700}
+h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(46px,6.4vw,88px);line-height:.96;letter-spacing:-.03em;margin:20px 0 14px}
+h1 i{color:var(--acc);font-style:italic}
+.lede{color:var(--mut);font-size:16px;line-height:1.65;max-width:44ch;margin:0 0 22px}
+/* command search bezel */
+.shell{background:var(--shell);border:1px solid var(--line);border-radius:28px;padding:8px}
+.core{background:rgba(10,11,13,.94);border:1px solid rgba(245,243,236,.08);border-radius:21px;
+box-shadow:inset 0 1px 1px rgba(255,255,255,.12);padding:12px}
+.cmd{display:flex;align-items:center;gap:10px;background:rgba(245,243,236,.04);border:1px solid var(--line);border-radius:999px;padding:6px 6px 6px 18px}
+.cmd svg{flex:none;opacity:.6}
+.cmd input{flex:1;background:transparent;border:0;color:var(--ink);font-size:15px;outline:none;min-width:0;font-family:inherit}
+.cmd kbd{font-family:inherit;font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:7px;padding:3px 8px;white-space:nowrap}
+.quick{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.pill{border:1px solid var(--line);background:rgba(245,243,236,.04);color:var(--ink);padding:9px 16px;border-radius:999px;
+cursor:pointer;font-size:13px;font-weight:700;font-family:inherit;transition:transform .6s var(--ease),background .6s var(--ease),color .6s var(--ease)}
+.pill:hover{transform:translateY(-2px);border-color:rgba(216,243,78,.5)}
+.pill.on{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.minifilters{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.minifilters select{background:rgba(245,243,236,.04);border:1px solid var(--line);color:var(--ink);padding:10px 14px;border-radius:999px;font-size:13px;font-family:inherit}
+.mcheck{font-size:13px;color:var(--mut);display:flex;gap:8px;align-items:center;border:1px solid var(--line);padding:10px 14px;border-radius:999px;cursor:pointer;font-weight:600}
+details.match{margin-top:12px;color:var(--mut);font-size:13px}
+details.match summary{cursor:pointer;font-weight:600}
+.quiz{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.quiz label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;display:block;margin-bottom:6px}
+.quiz select{width:100%}
+/* right rails */
+.rails{display:flex;flex-direction:column;gap:18px;min-width:0}
+.railhead{display:flex;align-items:baseline;justify-content:space-between;margin:0 4px}
+.railhead h3{font-family:"Space Grotesk";font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin:0}
+.railhead span{font-size:12px;color:var(--mut)}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(240px,300px);gap:12px;overflow-x:auto;padding:6px 4px 16px;
+scroll-snap-type:x mandatory;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.minicard{scroll-snap-align:start;background:var(--shell);border:1px solid var(--line);border-radius:22px;padding:6px;
+transition:transform .7s var(--ease),border-color .7s var(--ease);cursor:pointer}
+.minicard:nth-child(2){transform:rotate(1.2deg)}
+.minicard:nth-child(3){transform:rotate(-1deg)}
+.minicard:hover{transform:rotate(0) translateY(-4px);border-color:rgba(216,243,78,.45)}
+.minicard .in{background:var(--core);border:1px solid rgba(245,243,236,.07);border-radius:17px;padding:16px;display:flex;flex-direction:column;gap:8px;min-height:170px}
+.minicard .rank{font-family:"Fraunces";font-style:italic;font-size:13px;color:var(--acc)}
+.minicard .nm{font-family:"Space Grotesk";font-weight:700;font-size:18px}
+.minicard .mt{font-size:12px;color:var(--mut)}
+/* cascade directory */
+.sechead{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:56px 2px 6px;flex-wrap:wrap}
+.sechead h2{font-family:"Fraunces";font-weight:600;font-size:clamp(30px,4vw,46px);letter-spacing:-.02em;margin:0}
+.sechead h2 i{color:var(--acc)}
+.sechead p{color:var(--mut);font-size:13px;margin:0}
+.rows{display:flex;flex-direction:column;margin-top:8px}
+.rowcard{background:var(--shell);border:1px solid var(--line);border-radius:24px;padding:6px;margin-top:-6px;
+transition:transform .7s var(--ease),border-color .7s var(--ease);opacity:0;transform:translateY(30px);filter:blur(8px)}
+.rowcard.vis{opacity:1;transform:none;filter:none}
+.rowcard:first-child{margin-top:0}
+.rowcard:nth-child(odd) .in{margin-left:0}
+.rowcard:hover{border-color:rgba(216,243,78,.4);z-index:2}
+.rowcard .in{background:var(--core);border:1px solid rgba(245,243,236,.07);border-radius:19px;padding:18px 20px;
+display:grid;grid-template-columns:56px 1fr auto;gap:16px;align-items:center}
+.rnum{font-family:"Fraunces";font-style:italic;font-size:22px;color:var(--mut)}
+.rname{font-family:"Space Grotesk";font-weight:700;font-size:20px;letter-spacing:-.01em;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.rmeta{font-size:12.5px;color:var(--mut);margin-top:4px}
+.rprogs{font-size:12.5px;color:var(--mut);margin-top:6px}
+.rprogs b{color:var(--ink)}
+.matchpct{font-size:11px;font-weight:800;background:var(--acc);color:var(--acc-ink);border-radius:999px;padding:4px 10px}
+.begtag{font-size:11px;font-weight:800;border:1px solid rgba(216,243,78,.4);color:var(--acc);border-radius:999px;padding:4px 10px}
+.ractions{display:flex;gap:8px;align-items:center}
+.savebtn{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:999px;width:44px;height:44px;
+cursor:pointer;font-size:17px;transition:transform .6s var(--ease),border-color .6s var(--ease);line-height:1}
+.savebtn:hover{transform:scale(1.08);border-color:var(--acc)}
+.savebtn.saved{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.openbtn{display:inline-flex;align-items:center;gap:10px;background:#f5f3ec;color:#0b0c0e;font-weight:800;font-size:13px;
+border-radius:999px;padding:8px 8px 8px 18px;cursor:pointer;border:0;font-family:inherit;transition:transform .6s var(--ease)}
+.openbtn:active{transform:scale(.97)}
+.openbtn .ic{background:rgba(0,0,0,.1)}
+.openbtn:hover .ic{transform:translate(2px,-2px) scale(1.08)}
+.skel{height:96px;border-radius:24px;background:linear-gradient(90deg,#101114,#1a1c22,#101114);background-size:200% 100%;animation:sh 1.4s infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.statebox{text-align:center;padding:60px 20px;color:var(--mut);border:1px dashed var(--line);border-radius:24px;margin-top:12px}
+/* overlay */
+.modal{position:fixed;inset:0;background:rgba(4,5,6,.7);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+display:none;align-items:flex-end;justify-content:center;z-index:30;padding:0}
+.modal.open{display:flex}
+.sheet{background:#0e0f12;border:1px solid var(--line);border-bottom:0;border-radius:28px 28px 0 0;max-width:760px;width:100%;
+max-height:90vh;overflow:auto;padding:10px;transform:translateY(60px);opacity:0;transition:transform .7s var(--ease),opacity .7s var(--ease)}
+.modal.open .sheet{transform:none;opacity:1}
+.sheetin{background:rgba(245,243,236,.02);border:1px solid rgba(245,243,236,.07);border-radius:20px;padding:28px}
+.sheetin .stag{animation:rise .7s var(--ease) both}
+.sheetin .stag:nth-child(2){animation-delay:.08s}.sheetin .stag:nth-child(3){animation-delay:.14s}
+.sheetin .stag:nth-child(4){animation-delay:.2s}.sheetin .stag:nth-child(5){animation-delay:.26s}
+@keyframes rise{from{transform:translateY(18px);opacity:0}}
+.prow{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;align-items:center}
+.prow small{color:var(--mut);display:block;margin-top:2px}
+.linkarrow{color:var(--acc);text-decoration:none;font-size:13px;font-weight:800;display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
+.foot{color:var(--mut);font-size:12px;margin-top:34px;text-align:center;line-height:1.8}
+@media (prefers-reduced-motion:reduce){
+*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}
+.rowcard,.sheetin .stag{opacity:1!important;transform:none!important;filter:none!important}
+.tick{animation:none}
+}
+@media(max-width:920px){
+.hero{grid-template-columns:1fr;padding:48px 0 20px}
+.stickycol{position:static}
+.rowcard .in{grid-template-columns:1fr;gap:10px}
+.ractions{justify-content:flex-start}
+.quiz{grid-template-columns:1fr}
+.wrap{padding:0 16px 80px}
+.navmeta{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="nav"><div class="navin">
+<div class="logo">bounty<em>finder</em></div>
+<div class="navmeta"><span class="dotlive"></span><span id="count">loading…</span></div>
+<button class="cta" id="savedBtn">Saved · <span id="savedN">0</span> <span class="ic"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4h12v17l-6-4-6 4z"/></svg></span></button>
+</div></div>
+
+<div class="ticker"><span class="tick" id="tick"></span></div>
+
+<div class="hero">
+<div class="stickycol">
+<span class="eyebrow" id="eyebrow">Global directory</span>
+<h1>Every bounty<br>platform. <i>One search.</i></h1>
+<p class="lede">Stop guessing where to hunt. Search the world's bug-bounty platforms, compare payouts and access, then jump straight to live programs. Press <b>/</b> to search.</p>
+<div class="shell"><div class="core">
+<div class="cmd">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+<input id="q" type="text" placeholder="Try: web3 · japan · wordpress · ai…" autocomplete="off">
+<kbd>/ to focus</kbd>
+</div>
+<div class="quick" id="quick">
+<button class="pill" data-f="web2">web2</button><button class="pill" data-f="web3">web3</button><button class="pill" data-f="ai">ai / llm</button><button class="pill" data-f="wordpress">wordpress</button><button class="pill" data-f="gov">gov</button><button class="pill" data-f="pentest">pentest</button>
+</div>
+<div class="minifilters">
+<select id="focus" aria-label="Filter by focus"><option value="">All focus</option><option>web2</option><option>web3</option><option>ai</option><option>gov</option><option>mobile</option><option>pentest</option><option>wordpress</option></select>
+<select id="region" aria-label="Filter by region"><option value="">All regions</option><option>Global</option><option>USA</option><option>EU</option><option>Japan</option><option>India</option><option>Switzerland</option></select>
+<select id="sort" aria-label="Sort results"><option value="match">Best match</option><option value="payout">Highest payout</option><option value="beginner">Beginner first</option></select>
+<label class="mcheck"><input type="checkbox" id="beg"> Beginner</label>
+<label class="mcheck"><input type="checkbox" id="pub" checked> Public</label>
+</div>
+<details class="match"><summary>Optional matcher — level + interest + goal</summary>
+<div class="quiz">
+<div><label id="lb-level">Level</label><select id="level" aria-labelledby="lb-level"><option value="">skip</option><option value="beginner">Beginner</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
+<div><label id="lb-interest">Interest</label><select id="interest" aria-labelledby="lb-interest"><option value="">skip</option><option>web2</option><option>web3</option><option>ai</option><option>gov</option><option>wordpress</option></select></div>
+<div><label id="lb-goal">Goal</label><select id="goal" aria-labelledby="lb-goal"><option value="">skip</option><option value="money">Max payout</option><option value="learning">Learn fast</option><option value="portfolio">Portfolio</option></select></div>
+</div></details>
+</div></div>
+</div>
+
+<div class="rails" id="rails"></div>
+</div>
+
+<div class="sechead"><div><h2>The full <i>directory.</i></h2><p id="resSub"></p></div><p>Click a row for programs.</p></div>
+<div class="rows" id="list"></div>
+<div class="foot">Sample program rows are illustrative — live programs live on each platform.<br>Sources: disclose.io + 2026 research.</div>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Platform details"><div class="sheet"><div class="sheetin" id="sheetBody"></div></div></div>
+
+<script>
+const SAMPLE={
+"HackerOne":[["Google VRP","web · up to $31k","public"],["Uber","api · up to $15k","public"]],
+"Bugcrowd":[["Tesla Motors","web/api · up to $15k","public"],["Atlassian","saas · up to $10k","public"]],
+"Intigriti":[["Nvidia","enterprise program","public"],["Stellantis","web · up to €10k","public"]],
+"YesWeHack":[["OVHcloud","cloud · up to €20k","public"],["Dojo challenges","training","public"]],
+"Immunefi":[["Wormhole","smart-contract · up to $10M","public"],["Chainlink","defi · up to $500k","public"]],
+"CodeHawks (Cyfrin)":[["First Flight","contest · pot","contest"],["Audit race","time-boxed","contest"]],
+"Huntr":[["AI jailbreak board","llm · varies","public"]],
+"Patchstack":[["WP plugin VDP feed","wordpress · per CVE","public"]]};
+let data=[],activeQuick='',savedOnly=false,saved=new Set(JSON.parse(localStorage.getItem('bf_saved')||'[]'));
+function payoutTier(s){s=(s||'').toLowerCase();if(s.includes('10m')||s.includes('2m'))return 3;if(s.includes('100k')||s.includes('50k')||s.includes('500k'))return 2;if(s.includes('$'))return 1;return 0;}
+function score(p,l,i,g){let sc=0,why=[];const f=p.focus.map(x=>x.toLowerCase());if(i&&f.includes(i)){sc+=5;why.push('matches '+i);}if(l==='beginner'&&p.beginner_friendly){sc+=3;why.push('beginner-friendly');}if(l==='beginner'&&p.access.includes('invite')){sc-=2;why.push('invite-only');}if(l==='advanced'&&!p.beginner_friendly){sc+=2;why.push('pro crowd');}if((l==='advanced'||g==='money')&&payoutTier(p.payout_range)>=2){sc+=2;why.push('high ceiling');}if(g==='learning'&&p.beginner_friendly){sc+=2;why.push('fast feedback');}if(g==='portfolio'&&p.access.includes('public')){sc+=2;why.push('public entry');}if(p.access.includes('public'))sc+=1;return{sc,why};}
+function persist(){localStorage.setItem('bf_saved',JSON.stringify([...saved]));document.getElementById('savedN').textContent=saved.size;}
+function load(){
+document.getElementById('list').innerHTML='<div class="skel"></div><div class="skel"></div><div class="skel"></div>';
+fetch('platforms.json').then(r=>{if(!r.ok)throw 0;return r.json();}).then(j=>{data=j;persist();buildTicker();
+document.getElementById('eyebrow').textContent='Global directory · '+j.length+' platforms';render();}).catch(()=>{document.getElementById('list').innerHTML='<div class="statebox">Could not load platforms.json. Serve from repo root: python3 -m http.server 8000</div>';});
+}
+function buildTicker(){const tops=data.filter(p=>payoutTier(p.payout_range)>=2).map(p=>p.name+' <b>'+p.payout_range+'</b> ·').join(' ');
+document.getElementById('tick').innerHTML=(tops+' ').repeat(4);}
+function filtered(){
+const q=document.getElementById('q').value.toLowerCase(),f=(document.getElementById('focus').value||activeQuick).toLowerCase();
+const rg=document.getElementById('region').value.toLowerCase(),beg=document.getElementById('beg').checked,pub=document.getElementById('pub').checked;
+const l=document.getElementById('level').value,i=(document.getElementById('interest').value||'').toLowerCase(),g=document.getElementById('goal').value;
+const sort=document.getElementById('sort').value;
+let out=data.filter(p=>{if(savedOnly&&!saved.has(p.name))return false;
+if(f&&!p.focus.map(x=>x.toLowerCase()).includes(f))return false;
+if(rg&&!p.region.toLowerCase().includes(rg))return false;if(beg&&!p.beginner_friendly)return false;
+if(pub&&!p.access.includes('public'))return false;
+if(q&&![p.name,p.best_for,p.notes,p.region,p.focus.join(' ')].join(' ').toLowerCase().includes(q))return false;return true;});
+out=out.map(p=>({p,...score(p,l,i,g)}));
+if(sort==='payout')out.sort((a,b)=>payoutTier(b.p.payout_range)-payoutTier(a.p.payout_range));
+else if(sort==='beginner')out.sort((a,b)=>(b.p.beginner_friendly-a.p.beginner_friendly)||(b.sc-a.sc));
+else out.sort((a,b)=>b.sc-a.sc);
+return{out,ranked:!!(l||i||g)};
+}
+function rail(title,sub,items){return '<div><div class="railhead"><h3>'+title+'</h3><span>'+sub+'</span></div><div class="rail">'+items.map(p=>
+'<div class="minicard" data-n="'+p.name+'"><div class="in"><span class="rank">№ '+p.rank+'</span><span class="nm">'+p.name+'</span><span class="mt">'+p.focus.slice(0,2).join(' · ')+' — '+p.payout_range+'</span></div></div>').join('')+'</div></div>';}
+function render(){
+const{out,ranked}=filtered();
+document.getElementById('count').textContent=out.length+' / '+data.length+' platforms';
+document.getElementById('resSub').textContent=out.length+' results'+(savedOnly?' · saved only':'');
+// rails: start here / max payout / web3+ai — computed, not hardcoded
+const begTop=data.filter(p=>p.beginner_friendly&&p.access.includes('public')).slice(0,5).map((p,k)=>({...p,rank:k+1}));
+const payTop=[...data].sort((a,b)=>payoutTier(b.payout_range)-payoutTier(a.payout_range)).slice(0,5).map((p,k)=>({...p,rank:k+1}));
+const w3=data.filter(p=>p.focus.map(x=>x.toLowerCase()).some(f=>['web3','ai','llm'].includes(f))).slice(0,5).map((p,k)=>({...p,rank:k+1}));
+document.getElementById('rails').innerHTML=rail('Start here','beginner · public',begTop)+rail('Max payout','highest ceiling',payTop)+rail('Web3 + AI','on-chain & llm',w3);
+if(!out.length){document.getElementById('list').innerHTML='<div class="statebox">No platforms match.<br><br><button class="pill" id="clearBtn">Clear search + filters</button></div>';
+document.getElementById('clearBtn').onclick=clearAll;observe();return;}
+document.getElementById('list').innerHTML=out.map(({p,sc,why},idx)=>{
+const pct=ranked?Math.max(20,Math.min(98,55+sc*6)):null;
+const prev=(SAMPLE[p.name]||[]).map(s=>'<b>'+s[0]+'</b> · '+s[1]).join(' &nbsp;·&nbsp; ')||'Live program directory on platform';
+const isS=saved.has(p.name);
+return '<article class="rowcard" data-n="'+p.name+'"><div class="in">'
++'<div class="rnum">'+String(idx+1).padStart(2,'0')+'</div>'
++'<div><div class="rname">'+p.name+(pct?' <span class="matchpct">'+pct+'% match</span>':'')+(p.beginner_friendly?' <span class="begtag">beginner</span>':'')+'</div>'
++'<div class="rmeta">'+p.region+' · '+p.access+' · '+p.payout_range+' · '+p.best_for+(ranked&&why.length?' · Why: '+why.join(', '):'')+'</div>'
++'<div class="rprogs">'+prev+'</div></div>'
++'<div class="ractions"><button class="savebtn'+(isS?' saved':'')+'" data-save="'+p.name+'" title="Save">'+(isS?'★':'☆')+'</button><button class="openbtn" data-open="'+p.name+'">Open <span class="ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17 17 7M8 7h9v9"/></svg></span></button></div>'
++'</div></article>';}).join('');
+observe();
+}
+function observe(){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}}),{threshold:.05});
+document.querySelectorAll('.rowcard').forEach(c=>io.observe(c));}
+function clearAll(){document.getElementById('q').value='';document.getElementById('focus').value='';document.getElementById('region').value='';activeQuick='';savedOnly=false;document.querySelectorAll('#quick .pill').forEach(b=>b.classList.remove('on'));render();}
+function openModal(n){const p=data.find(x=>x.name===n);if(!p)return;
+const rows=(SAMPLE[p.name]||[['Live program directory','see live list on platform','public']]).map(s=>'<div class="prow"><div><b>'+s[0]+'</b><small>'+s[1]+' · '+s[2]+' · sample</small></div><a class="linkarrow" href="'+p.programs_url+'" target="_blank" rel="noopener">Open</a></div>').join('');
+document.getElementById('sheetBody').innerHTML='<div class="stag"><span class="eyebrow">'+p.focus.join(' · ')+'</span></div>'
++'<h2 class="stag" style="font-family:Fraunces;font-size:38px;margin:12px 0 4px;letter-spacing:-.02em">'+p.name+'</h2>'
++'<div class="stag" style="color:var(--mut);font-size:13px">'+p.region+' · '+p.access+' · '+p.payout_range+'</div>'
++'<p class="stag" style="color:var(--mut);line-height:1.7">'+p.notes+'</p>'
++'<p class="stag" style="font-size:14px"><em>Best for:</em> '+p.best_for+'</p>'
++'<h3 class="stag" style="font-family:Space Grotesk">Programs (sample)</h3><div class="stag">'+rows+'</div>'
++'<div class="stag" style="display:flex;gap:8px;margin-top:16px"><button class="openbtn" id="mClose" style="background:transparent;color:var(--ink);border:1px solid var(--line)">Close</button><a class="openbtn" style="text-decoration:none;flex:1;justify-content:center" href="'+p.programs_url+'" target="_blank" rel="noopener">All programs <span class="ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></div>';
+document.getElementById('modal').classList.add('open');
+document.getElementById('mClose').onclick=()=>{document.getElementById('modal').classList.remove('open');};
+document.getElementById('mClose').focus();}
+document.getElementById('list').addEventListener('click',e=>{
+const s=e.target.closest('[data-save]');if(s){e.stopPropagation();const n=s.dataset.save;saved.has(n)?saved.delete(n):saved.add(n);persist();render();return;}
+const b=e.target.closest('[data-open]');const c=e.target.closest('.rowcard');
+if(b){openModal(b.dataset.open);}else if(c&&!e.target.closest('a'))openModal(c.dataset.n);});
+document.getElementById('rails').addEventListener('click',e=>{const c=e.target.closest('.minicard');if(c)openModal(c.dataset.n);});
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')e.target.classList.remove('open');});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('modal').classList.remove('open');
+if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='SELECT'){e.preventDefault();document.getElementById('q').focus();}});
+['q','focus','region','beg','pub','level','interest','goal','sort'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+document.getElementById('quick').addEventListener('click',e=>{if(!e.target.dataset.f)return;activeQuick=activeQuick===e.target.dataset.f?'':e.target.dataset.f;document.getElementById('focus').value='';document.querySelectorAll('#quick .pill').forEach(b=>b.classList.toggle('on',b.dataset.f===activeQuick));render();});
+document.getElementById('savedBtn').onclick=()=>{savedOnly=!savedOnly;render();};
+load();
+</script>
+</body>
+</html>
