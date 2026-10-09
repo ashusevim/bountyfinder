@@ -1749,5 +1749,244 @@
   "beginner_friendly": true,
   "best_for": "BD programs",
   "notes": "Bangladesh platform. Very thin competition."
+ },
+ {
+  "name": "Spearbit",
+  "url": "https://spearbit.com",
+  "programs_url": "https://cantina.xyz/competitions",
+  "region": "Global",
+  "focus": [
+   "web3",
+   "smart-contract"
+  ],
+  "access": "private+public-contest",
+  "payout_range": "$10k-$150k+",
+  "beginner_friendly": false,
+  "best_for": "Elite smart-contract auditing",
+  "notes": "Distributed network of senior auditors with high-end DeFi engagements."
+ },
+ {
+  "name": "Google VRP",
+  "url": "https://bughunters.google.com",
+  "programs_url": "https://bughunters.google.com/about/rules",
+  "region": "USA/Global",
+  "focus": [
+   "web2",
+   "mobile",
+   "cloud"
+  ],
+  "access": "public",
+  "payout_range": "$100-$150k+",
+  "beginner_friendly": false,
+  "best_for": "Google ecosystem vulnerabilities",
+  "notes": "Google-run VRP across products including Android, Chrome, and cloud properties."
+ },
+ {
+  "name": "Microsoft MSRC",
+  "url": "https://www.microsoft.com/en-us/msrc/bounty",
+  "programs_url": "https://www.microsoft.com/en-us/msrc/bounty",
+  "region": "USA/Global",
+  "focus": [
+   "cloud",
+   "os",
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "$500-$250k+",
+  "beginner_friendly": false,
+  "best_for": "Microsoft product vulnerabilities",
+  "notes": "MSRC bounty hub for Windows, Azure, M365 and adjacent products."
+ },
+ {
+  "name": "Apple Security Bounty",
+  "url": "https://security.apple.com/bounty/",
+  "programs_url": "https://security.apple.com/bounty/",
+  "region": "USA/Global",
+  "focus": [
+   "mobile",
+   "os",
+   "hardware"
+  ],
+  "access": "public+invite",
+  "payout_range": "$25k-$1M+",
+  "beginner_friendly": false,
+  "best_for": "iOS/macOS high-impact research",
+  "notes": "Apple bounty program focused on severe classes like zero-click chains."
+ },
+ {
+  "name": "GitHub Security Bug Bounty",
+  "url": "https://bounty.github.com",
+  "programs_url": "https://bounty.github.com",
+  "region": "USA/Global",
+  "focus": [
+   "web2",
+   "api",
+   "devsecops"
+  ],
+  "access": "public",
+  "payout_range": "$500-$30k+",
+  "beginner_friendly": false,
+  "best_for": "GitHub platform security",
+  "notes": "Program covers GitHub.com and selected related assets."
+ },
+ {
+  "name": "Samsung VRP",
+  "url": "https://security.samsungmobile.com/rewardsProgram.smsb",
+  "programs_url": "https://security.samsungmobile.com/rewardsProgram.smsb",
+  "region": "South Korea/Global",
+  "focus": [
+   "mobile",
+   "hardware",
+   "iot"
+  ],
+  "access": "public",
+  "payout_range": "$200-$1M+",
+  "beginner_friendly": false,
+  "best_for": "Galaxy device security research",
+  "notes": "Samsung mobile rewards program for impactful vulnerabilities."
+ },
+ {
+  "name": "Shopify Bug Bounty",
+  "url": "https://hackerone.com/shopify",
+  "programs_url": "https://hackerone.com/shopify",
+  "region": "Canada/Global",
+  "focus": [
+   "web2",
+   "api",
+   "mobile"
+  ],
+  "access": "public",
+  "payout_range": "$500-$50k+",
+  "beginner_friendly": true,
+  "best_for": "High-volume ecommerce targets",
+  "notes": "Long-running public program with clear triage and broad scope."
+ },
+ {
+  "name": "Tesla Bug Bounty",
+  "url": "https://bugcrowd.com/tesla",
+  "programs_url": "https://bugcrowd.com/tesla",
+  "region": "USA/Global",
+  "focus": [
+   "iot",
+   "automotive",
+   "web2"
+  ],
+  "access": "public",
+  "payout_range": "$100-$15k+",
+  "beginner_friendly": false,
+  "best_for": "Automotive and connected device security",
+  "notes": "Tesla program on Bugcrowd with app, infrastructure, and vehicle scope."
+ },
+ {
+  "name": "GitLab Bug Bounty",
+  "url": "https://hackerone.com/gitlab",
+  "programs_url": "https://hackerone.com/gitlab",
+  "region": "USA/Global",
+  "focus": [
+   "web2",
+   "api",
+   "ci-cd"
+  ],
+  "access": "public",
+  "payout_range": "$300-$20k+",
+  "beginner_friendly": true,
+  "best_for": "Open-source DevSecOps ecosystem",
+  "notes": "Public HackerOne program covering SaaS and adjacent GitLab assets."
+ },
+ {
+  "name": "Atlassian Bug Bounty",
+  "url": "https://bugcrowd.com/atlassian",
+  "programs_url": "https://bugcrowd.com/atlassian",
+  "region": "Australia/Global",
+  "focus": [
+   "web2",
+   "cloud",
+   "api"
+  ],
+  "access": "public",
+  "payout_range": "$300-$25k+",
+  "beginner_friendly": true,
+  "best_for": "Enterprise collaboration software targets",
+  "notes": "Atlassian program on Bugcrowd for Jira, Confluence and related services."
+ },
+ {
+  "name": "Bug Bounty Box",
+  "url": "https://bugbountybox.com",
+  "programs_url": "https://bugbountybox.com/programs",
+  "region": "Kenya/Africa",
+  "focus": [
+   "web2",
+   "mobile",
+   "fintech"
+  ],
+  "access": "public+private",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "African regional programs",
+  "notes": "Regional platform connecting African organizations with local researchers."
+ },
+ {
+  "name": "Pentabug",
+  "url": "https://pentabug.com",
+  "programs_url": "https://pentabug.com/programs",
+  "region": "India",
+  "focus": [
+   "web2",
+   "api",
+   "mobile"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "SME-focused India programs",
+  "notes": "India-focused platform for organizations launching early bug bounty efforts."
+ },
+ {
+  "name": "thebugbounty",
+  "url": "https://thebugbounty.com",
+  "programs_url": "https://thebugbounty.com",
+  "region": "Malaysia",
+  "focus": [
+   "web2",
+   "api",
+   "mobile"
+  ],
+  "access": "private+public",
+  "payout_range": "varies",
+  "beginner_friendly": true,
+  "best_for": "Malaysia regional programs",
+  "notes": "Malaysian platform connecting local organizations and researchers."
+ },
+ {
+  "name": "LRQA Nettitude",
+  "url": "https://www.lrqa.com/en/cyber-labs/bug-bounty/",
+  "programs_url": "https://www.lrqa.com/en/cyber-labs/bug-bounty/",
+  "region": "UK/EU",
+  "focus": [
+   "web2",
+   "cloud",
+   "mobile"
+  ],
+  "access": "private",
+  "payout_range": "varies",
+  "beginner_friendly": false,
+  "best_for": "Managed enterprise programs",
+  "notes": "Consultancy-led managed bug bounty service for regulated organizations."
+ },
+ {
+  "name": "Uber Bug Bounty",
+  "url": "https://hackerone.com/uber",
+  "programs_url": "https://hackerone.com/uber",
+  "region": "USA/Global",
+  "focus": [
+   "web2",
+   "mobile",
+   "api"
+  ],
+  "access": "public",
+  "payout_range": "$500-$15k+",
+  "beginner_friendly": true,
+  "best_for": "High-traffic consumer app attack surface",
+  "notes": "Mature public program covering rideshare apps and backend services."
  }
 ]
